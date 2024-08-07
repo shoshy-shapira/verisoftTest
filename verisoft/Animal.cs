@@ -32,10 +32,8 @@ namespace verisoft
 
         public abstract void Whatmood();// או להפך מה החיה עושה כשהיא במצב רוח טוב
 
-        public virtual void SayHello()
-        {
-            SayHello(1); // ברירת מחדל מברכת פעם אחת
-        } // מתודה וירטואלית עם מימוש ברירת מחדל
+        public virtual void SayHello() { }
+       
         public abstract void SayHello(int times);
         public Boolean IsMammals()
         {

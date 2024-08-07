@@ -45,7 +45,10 @@ namespace verisoft
         //public override void SayHello()
         //{
         //}
-
+        public override void SayHello()
+        {
+            SayHello(1);
+        }
         public override void SayHello(int times)
         {
             if (times <= 0)

@@ -25,8 +25,8 @@ namespace verisoft
             Frog frog = new Frog(true, true, 0);
             frog.Whatmood();
             frog.SayHello(3);
-            frog.SayHello();
             frog.SayHello(-1);
+            frog.SayHello();
 
 
 

@@ -38,8 +38,9 @@ namespace verisoft
             {
                 for (int i = 0; i < times; i++)
                 {
-                    Console.WriteLine("quack!");
+                    Console.Write("quack!");
                 }
+                Console.WriteLine();
             }
         }
         public override void Whatmood()
