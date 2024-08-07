@@ -13,36 +13,6 @@ namespace verisoft
     : base(mammals, comivorous, mood)
         {
         }
-
-        //public override void SayHello()
-        //{
-        //    if (mood == (int)Lmood.MOOD_HAPPY)
-        //    {
-        //        Console.WriteLine("HAO!");
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("The dog is in no mood to say hello");
-        //    }
-        //}
-
-        //public override void SayHello(int times)
-        //{
-        //    if (mood == (int)Lmood.MOOD_HAPPY)
-        //    {
-        //        for (int i = 0; i < times; i++)
-        //        {
-        //            Console.Write("HAO! ");
-        //        }
-        //        Console.WriteLine();
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("The dog is in no mood to say hello");
-        //    }
-        //}
-
-        //public override void SayHello() { }
         public override void SayHello()
         {
             SayHello(1);
@@ -70,7 +40,7 @@ namespace verisoft
         {
             return numOfLeghth;
         }
-        public override void Whatmood()
+        public override void WhatMood()
         {
             if (mood == (int)Lmood.MOOD_HAPPY)
             {

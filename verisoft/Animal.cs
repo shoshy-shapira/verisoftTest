@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,7 +31,7 @@ namespace verisoft
             set { mood = (int)value; }
         }
 
-        public abstract void Whatmood();// או להפך מה החיה עושה כשהיא במצב רוח טוב
+        public abstract void WhatMood();// או להפך מה החיה עושה כשהיא במצב רוח טוב
 
         public virtual void SayHello() { }
        
@@ -50,7 +51,10 @@ namespace verisoft
             comivorous = b;
         }
 
-        
+        public override string ToString()
+        {
+            return $"Animal Name:{GetType().Name}: mammals:{mammals}, comivorous:{comivorous},mood{mood} ";
+        }
 
 
     }

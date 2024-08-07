@@ -14,20 +14,6 @@ namespace verisoft
     : base(mammals, comivorous, mood)
         {
         }
-        //public override void SayHello(int times)
-        //{
-        //    if (mood == (int)Lmood.MOOD_HAPPY)
-        //    {
-        //        for (int i = 0; i < times; i++)
-        //        {
-        //            Console.WriteLine("quack!");
-        //        }
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("הצפרדע לא במצב רוח לומר שלום.");
-        //    }
-        //}
         public override void SayHello(int times)
         {
             if (times <= 0)
@@ -43,7 +29,7 @@ namespace verisoft
                 Console.WriteLine();
             }
         }
-        public override void Whatmood()
+        public override void WhatMood()
         {
              if (mood == (int)Lmood.MOOD_HAPPY)
             {
