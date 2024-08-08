@@ -53,7 +53,7 @@ namespace verisoft
 
         public override string ToString()
         {
-            return $"Animal Name:{GetType().Name}: mammals:{mammals}, comivorous:{comivorous},mood{mood} ";
+            return $"Animal Name:{GetType().Name}: mammals: {mammals}, comivorous: {comivorous},mood: {mood} ";
         }
 
 
