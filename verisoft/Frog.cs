@@ -10,8 +10,8 @@ namespace verisoft
     {
         private int numOfLeghth = 4;
 
-        public Frog(bool mammals, bool comivorous, int mood)
-    : base(mammals, comivorous, mood)
+        public Frog( int mood)
+    : base(false, false, mood)
         {
         }
         public override void SayHello(int times)
@@ -36,6 +36,7 @@ namespace verisoft
                 Console.Write("is will sing:");
                 SayHello(3);
                 Console.Write("on the shore");
+                Console.WriteLine();
 
             }
             else

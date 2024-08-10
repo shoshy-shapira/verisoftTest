@@ -9,8 +9,8 @@ namespace verisoft
     public class Dog : Animal, ILand
     {
         private int numOfLeghth = 4;
-        public Dog(bool mammals, bool comivorous, int mood)
-    : base(mammals, comivorous, mood)
+        public Dog(int mood)
+    : base(true, true, mood)
         {
         }
         public override void SayHello()
@@ -28,7 +28,7 @@ namespace verisoft
             Console.Write($"the dog wagging your tail {times}:");
             for (int i = 0; i < times; i++)
             {
-                Console.Write("~ ");
+                Console.Write("~ ");//כשכוש זנב
             }
                 Console.WriteLine();
 

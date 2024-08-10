@@ -25,7 +25,7 @@ namespace verisoft
            this.comivorous = comivorous;
            this.mood = mood;
         }
-        public Lmood CurrentMood // נכס שמחזיר את מצב הרוח כ-enum
+        protected Lmood CurrentMood // נכס שמחזיר את מצב הרוח כ-enum/ ישמש בעיקר בהדפסה והתצוגה ויזואלית יפה יותר
         {
             get { return (Lmood)mood; }            // המרה לעבודה עם ה-enum
             set { mood = (int)value; }
@@ -53,7 +53,7 @@ namespace verisoft
 
         public override string ToString()
         {
-            return $"Animal Name:{GetType().Name}: mammals: {mammals}, comivorous: {comivorous},mood: {mood} ";
+            return $"Animal Name:{GetType().Name}: mammals: {mammals}, comivorous: {comivorous},mood: {CurrentMood} ";
         }
 
 

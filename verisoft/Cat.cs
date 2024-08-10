@@ -10,7 +10,7 @@ namespace verisoft
     {
         private int numOfLeghth = 4;
 
-        public Cat(bool mammals, bool comivorous, int mood) : base(mammals, comivorous, mood)
+        public Cat( int mood) : base(true, true, mood)
         {
 
         }
