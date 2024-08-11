@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace verisoft
 {
-    internal class Frog : Animal, ILand, IWater
+    public class Frog : Animal, ILand, IWater
     {
         private int numOfLeghth = 4;
 
@@ -53,12 +53,20 @@ namespace verisoft
 
         public bool hashGills()
         {
-            return false;
+            return false;//בבדיקה בגוגל לרעשנים יש אך כנשהפכים לצפרדעים כבר אין
         }
 
         public bool hashLaysEggs()
         {
             return true;
+        }
+
+
+        public override string ToString()
+        {
+            return $"{base.ToString()}, " +
+                   $"number of legs: {numOfLeghth}, " +
+                   $"hashGills: {hashGills()}, "+ $"hashLaysEggs: {hashLaysEggs()}";
         }
 
     }

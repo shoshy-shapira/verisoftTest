@@ -57,5 +57,12 @@ namespace verisoft
         }
 
 
+        public override string ToString()
+        {
+            return $"{base.ToString()}, " +
+                   $"number of legs: {numOfLeghth}";
+        }
+
+
     }
 }
